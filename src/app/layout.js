@@ -21,12 +21,12 @@ const libre_baskerville = Libre_Baskerville({
 export default function RootLayout({ children }) {
   return (
     <html
-      lang="en"
+      lang="zh-cn"
       className={`${inter.className} ${libre_baskerville.className}`}
     >
       <body className="overflow-x-hidden antialiased">
         <main>
-          {process.env.NODE_ENV === "development" && (
+          {/* {process.env.NODE_ENV === "development" && (
             <div
               style={{
                 background: "#5163ba",
@@ -50,7 +50,7 @@ export default function RootLayout({ children }) {
                 . Remove this bar in <code>app/layout.js</code>.
               </p>
             </div>
-          )}
+          )} */}
           {children}
           <PrismicPreview repositoryName={repositoryName} />
         </main>
